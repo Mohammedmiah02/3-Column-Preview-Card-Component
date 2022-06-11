@@ -1,0 +1,114 @@
+/* Layout */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin: 50px auto; 
+    width: 65%;
+    max-width: 270px;
+}
+
+/* Typography */
+.card-1 {
+    background-color:  hsl(31, 77%, 52%);
+}
+
+.card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.content {
+    text-align: left;
+    padding: 3em;
+    line-height: 1.5;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .8rem;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: .5em;
+}
+
+.content h3,
+button, {
+    color: hsl(0, 0%, 95%);
+}
+
+.content p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.img-container {
+    padding-bottom: 1em;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution { font-size: 11px; text-align: center; }
+
+button {
+    margin-top: 1.5em;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 7px 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+button .orange {
+    color: hsl(31, 77%, 52%);
+}
+
+button .green {
+    color: hsl(184, 100%, 22%);
+}
+
+button .dark-green {
+    color: hsl(179, 100%, 13%);
+}
+
+button a {
+    text-decoration: none;
+}
+
+button a:hover {
+    color: white;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .main-container {
+        display: flex;
+        justify-content: column;
+        max-width: 800px;
+    }
+
+    .content {
+        padding: 3.5em;
+    }
+
+    .content p {
+        padding-bottom: 4em;
+        line-height: 1.7;
+    }
+} 
